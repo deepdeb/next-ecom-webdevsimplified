@@ -18,6 +18,7 @@ async function isAuthenticated(req: NextRequest) {
     const [username, password] = Buffer.from(authHeader.split(" ")[1], "base64").toString().split(":")
 
     console.log(username, password)
+    console.log(process.env.NEXT_PUBLIC_SERVER_URL)
 
     return username === process.env.ADMIN_USERNAME && await isValidPassword(password, process.env.HASHED_ADMIN_PASSWORD as string)
 }
