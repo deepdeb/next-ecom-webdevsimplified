@@ -4,14 +4,15 @@ import { OrderInformation } from './components/OrderInformation'
 type PurchaseReceiptEmailProps = {
     product: {
         name: string,
-        imagePath: string
+        imagePath: string,
+        description: string
     },
     order: { id: string, createdAt: Date, pricePaidInCents: number },
     downloadVerificationId: string
 }
 
 PurchaseReceiptEmail.PreviewProps = {
-    product: { name: "Product name", imagePath: "/products/7bf442a0-1c17-421d-b173-a1a2dcfca3df-manchester_united_jersey.jpg"  },
+    product: { name: "Product name", description: "Some description", imagePath: "/products/7bf442a0-1c17-421d-b173-a1a2dcfca3df-manchester_united_jersey.jpg"  },
     order: {
         id: crypto.randomUUID(),
         createdAt: new Date(),
