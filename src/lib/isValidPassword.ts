@@ -1,4 +1,7 @@
 export async function isValidPassword(password: string, hashedPassword: string) {
+    
+    // console.log('password that you entered in hashed form>>>', await hashPassword(password))
+
     return await hashPassword(password) === hashedPassword
 }
 

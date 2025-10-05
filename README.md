@@ -6,13 +6,13 @@ Create .env file at the root with following:
 
 ```bash
 DATABASE_URL="file:./dev.db"
-ADMIN_USERNAME=pradeep
-HASHED_ADMIN_PASSWORD="Your hashed admin password"
-RESEND_API_KEY="your resend API key"
+ADMIN_USERNAME="Set a new admin username"
+HASHED_ADMIN_PASSWORD="Your hashed admin password (set a new admin password and put the hashed version of it here)"
+RESEND_API_KEY="your resend API key (get the resend API key for Test Video from keep API keys)"
 SENDER_EMAIL=onboarding@resend.dev
 STRIPE_WEBHOOK_SECRET="Replace it with your stripe webhook signing secret that you get after login to stripe"
-STRIPE_SECRET_KEY="Your stripe secret key"
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY="Your stripe publishable key"
+STRIPE_SECRET_KEY="Your stripe secret key (get it from keep API keys)"
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY="Your stripe publishable key (get it from keep API keys)"
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 ```
 
