@@ -42,8 +42,7 @@ npm run email
 Then open another terminal and login to stripe and allow webhooks to listen to stripe actions:
 
 ```bash
-stripe login
-open the link and authorize in the browser
+stripe login (after running this, open the link and authorize in the browser)
 stripe listen --forward-to localhost:3000/webhooks/stripe (after running this you'll get a webhook secret key which you need to put in your .env file)
 ```
 
