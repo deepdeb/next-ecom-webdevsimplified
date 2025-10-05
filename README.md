@@ -2,7 +2,7 @@
 
 Clone the repository
 
-Create a .env file at the root with following:
+Create .env file at the root with following:
 
 ```bash
 DATABASE_URL="file:./dev.db"
